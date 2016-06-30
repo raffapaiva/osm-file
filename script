@@ -1,9 +1,9 @@
 #!/bin/bash
-for dir in 'ls /home/beemap/workspace/ogr2osm-master/ogr2osm/archives/';
-
+for dir in /home/beemap/workspace/ogr2osm-master/ogr2osm/archives/*
 do
     if [ -d $dir ]; then
-        (sudo -u python ogr2osm.py -o /home/beemap/workspace/ogr2osm-master/ogr2osm/archives/$dir.osm /home/beemap/workspace/ogr2osm-master/ogr2osm/archives/ --name="$dir")
-    fi
+        echo $dir
+        (sudo python ogr2osm.py -o $dir.osm $dir)
+    fi    
 done
 exit

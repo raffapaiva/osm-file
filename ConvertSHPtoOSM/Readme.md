@@ -1,3 +1,18 @@
+Conversion shell script
+=======================
+
+A tool for autoconvert the shapefiles into .osm data using the default configuration
+
+Usage
+---
+
+to run the scripe, use ./convertosm [dir], changing dir by the folder where the shapefiles are localized, the files dir must be the directory where you can found the folder, not only the .shp files(for a better conversion, the .dbf .prj .sbn .sbx and .shx are necessary).
+
+The python bindings are also necessary to execute and interpret the main part of the script.
+
+=========================================================================================================================================================================================================================
+
+
 ogr2osm.py
 ==========
 
@@ -14,17 +29,9 @@ the software you need.
 
 It also makes use of lxml. Although it should fall back to builtin XML implementations seamlessly these are less likely to be tested and will most likely run much slower.
 
-To install ogr2osm and download the default translations the following command 
-can be used:
+This version of ogr2osm is based on [Iván Sánchez Ortega](https://github.com/pnorman/ogr2osm)<ivan@sanchezortega.es>
 
-	git clone --recursive https://github.com/pnorman/ogr2osm
-	
-To update
 
-	cd ogr2osm
-	git pull
-	git submodule update
-	
 About
 -----
 
@@ -46,8 +53,11 @@ When writing your translation file you should look at other examples and
 carefully consider each external data source tag to see if it should be 
 converted to an OSM tag.
 
+The translations files can be found on https://github.com/pnorman/ogr2osm
+
 Usage
 -----
+if it's necessary to convert the shapefiles using another configuration, not the default one, the following options are necessary:
 
 	Usage: ogr2osm.py SRCFILE
 

@@ -1,9 +1,0 @@
-#!/bin/bash
-for dir in $1*
-do
-    if [ -d $dir ]; then
-        echo $dir
-        (sudo python ogr2osm.py -o $dir.osm $dir)
-    fi    
-done
-exit

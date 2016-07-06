@@ -1,4 +1,13 @@
 #!/bin/bash
+##############################################################
+#this script is used to run the ogr2osm in a directory and do#
+#a mass conversion, here, the argument will be the directory #
+#and the dir will run the folder checking with archives will #
+#be converted.                                               #
+#receive a dir in S1                                         #
+#check the folders on this dir, run the python code until    #
+#finish the conversion of all the files.                     #
+##############################################################
 for dir in $1*
 do
     if [ -d $dir ]; then

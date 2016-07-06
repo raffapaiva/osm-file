@@ -1,36 +1,40 @@
 Conversion shell script
 =======================
 
-A tool for autoconvert the shapefiles into .osm data using the default configuration
+A tool for autoconvert the shapefiles into .osm data using the default configuration.
 
 Usage
 ---
 
 to run the scripe, use ./convertosm [dir], changing dir by the folder where the shapefiles are localized, the files dir must be the directory where you can found the folder, not only the .shp files(for a better conversion, the .dbf .prj .sbn .sbx and .shx are necessary).
 
-The python bindings are also necessary to execute and interpret the main part of the script.
+The python bindings are also necessary to execute and interpret the main part of the script. the download can be done on <https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz>.
+
+Since the script do the conversion looking at the folders on the dir, please, avoid to let another files on folders on the same directory, to avoid conflict and possible bugs.
 
 =========================================================================================================================================================================================================================
 
+Useful information:
+the code and the python file are only compatible with the newest version of the osm files, based on the API 0.6, 
 
 ogr2osm.py
 ==========
 
-A tool for converting ogr-readable files like shapefiles into .osm data
+A tool for converting ogr-readable files like shapefiles into .osm data.
 
 
 Installation
 ------------
 
-ogr2osm requires gdal with python bindings. Depending on the file formats 
-you want to read you may have to compile it yourself but there should be no 
-issues with shapefiles. On Ubuntu you can run `sudo apt-get install -y python-gdal python-lxml` to get
-the software you need.
+ogr2osm requires gdal with python bindings, you can found for more information on the webpage <https://pypi.python.org/pypi/GDAL/>. 
+Depending on the file formats you want to read you may have to compile it yourself.
+You can run `'sudo apt-get install -y python-gdal python-lxml'` to get the software you need, if you are using a Debian based version.
 
 It also makes use of lxml. Although it should fall back to builtin XML implementations seamlessly these are less likely to be tested and will most likely run much slower.
 
 This version of ogr2osm is based on [Iván Sánchez Ortega](https://github.com/pnorman/ogr2osm)<ivan@sanchezortega.es>
 
+THE INFORMATION BELOW IS PART OF THE ORIGINAL INFORMATION PROVIDED BY THE DEVELOPER OF THE ogr2osm.py .
 
 About
 -----

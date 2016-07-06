@@ -122,17 +122,6 @@ if it's necessary to convert the shapefiles using another configuration, not the
 							
 Adding the file on the database
 =====================================================================================================================
-
-To access the test database, the following commands should be used on the terminal:
-To connect, from terminal:
-  `ssh beemap@192.168.0.87`
-
-Ip: 192.168.0.87
-
-
-to access the database by the pgAdmin3(or any other client), the information can be found below:
-
-Database:
   Name: gis_converter
 
 (information of the used database)

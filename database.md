@@ -186,3 +186,13 @@ Issues
 Since the shapefiles aren't made by the community, they don't follow the ID rules found on the Open Street Map, which make the osm2pgsql replace the repeatitive information everytime the user update it. to avoid this problem, it's necessary to everytime use the ogr2ogr to merge all the shapefiles before uploading them into the database, it's necessary also to merge the old information with the new one, to avoid repeatitive IDs and redundant information.
 
 some scripts and commands needs to be improved and correct to avoid some bugs and make easy the use of the import.
+
+Errors found
+=====================================================================================================================
+07/06/2016 - the convert software used, the ogr2osm.py, was unable to do the conversion preserving the main characteristics of the file, another convert softwares should be found
+
+
+
+LOG
+=====================================================================================================================
+07/06/2016 - first version of the database file instruction was finished.

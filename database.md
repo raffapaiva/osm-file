@@ -16,6 +16,10 @@ It's recommendable to check the files on the <http://www.mapshaper.org> before m
 
 ATTENTION: the shell script and the ogr2ogr program cannot merge files with different properties, the polygon type files can't be merged with lines or straight lines, ways or any other kind of file, each kinf of file(line, polygon) should be combined individually or you will found a error screen(the code will finish the merge, however, some files will be ignored)
 
+To merge the files with different properties, they should be in diferent folders and the command should be executed for each folder, to identify with files are different, the easiest way is running the code with all the .shp files, and check with files present erros on the terminal, after finding this files, move them into a new folder(only the files with presented error) and execute the command again.
+
+It's expected to have some problems with the convertion from UTF-8 to ISO-8859-1.
+
 Conversion shell script
 =====================================================================================================================
 

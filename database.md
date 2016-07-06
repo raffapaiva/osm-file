@@ -128,16 +128,13 @@ To connect, from terminal:
   `ssh beemap@192.168.0.87`
 
 Ip: 192.168.0.87
-User: beemap
-Pw: dabeeo0228
+
 
 to access the database by the pgAdmin3(or any other client), the information can be found below:
 
 Database:
   Name: gis_converter
-  User: beemap
-  Pw: dabeeo0228
-  Port: 5432
+
 (information of the used database)
 
 Connect in any other database using the following names:
